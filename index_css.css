@@ -1,0 +1,28 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.fade-in-text {
+  font-family: 'Cinzel';
+  animation: fadeIn 2s forwards;
+}
